@@ -27,7 +27,6 @@ public class AquaCommand extends BaseCommand {
                 sender.sendMessage(Color.translate("&7This server is running &b&l" + plugin.getDescription().getName()));
                 sender.sendMessage(Color.translate("&7Author: &b" + plugin.getDescription().getAuthors()));
                 sender.sendMessage(Color.translate("&7Version: &b" + plugin.getDescription().getVersion()));
-                sender.sendMessage(Color.translate("&cCracked nigguh"));
                 sender.sendMessage(Color.translate("&7&m------------------------------------"));
                 return;
             }
@@ -37,7 +36,6 @@ public class AquaCommand extends BaseCommand {
                 sender.sendMessage(Color.translate("&7This server is running &b&l" + plugin.getDescription().getName()));
                 sender.sendMessage(Color.translate("&7Author: &b" + plugin.getDescription().getAuthors()));
                 sender.sendMessage(Color.translate("&7Version: &b" + plugin.getDescription().getVersion()));
-                sender.sendMessage(Color.translate("&cCracked nigguh"));
                 sender.sendMessage(Color.translate("&7&m------------------------------------"));
                 return;
             }
