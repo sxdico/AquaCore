@@ -1,0 +1,328 @@
+server-name: 'Lobby'
+chat-format:
+  enabled: true
+  format: '<prefix><tag><nameColor><player><suffix>&7: &f<message>'
+private-message-sound: 'ORB_PICKUP'
+rank-list-use-gui: false
+#Placecholders:
+#<prefix>
+#<weight>
+#<suffix>
+#<permissions>
+#<inheritance>
+rank-list-format:
+  - '&a- &3<name> &a(<prefix>&a, <weight>&a)'
+rank-list-item-lore:
+  - '&7&m-------------------------------------'
+  - '&bPrefix&7: &a<prefix>'
+  - '&bSuffix&7: &a<suffix>'
+  - '&bWeight&7: &a<weight>'
+  - '&bInheritance&7: &a<inheritance>'
+  - '&bTotal permissions&7: &a<totalPerms>'
+  - '&7&m-------------------------------------'
+grant-item-lore:
+  - '&7&m-----------------------------------'
+  - '&aAdded by&7: &f<addedBy>'
+  - '&aDate when added&7: &f<addedAt>'
+  - '&aDuration&7: &f<duration>'
+  - '&aReason&7: &f<reason>'
+  - '&aServer&7: &f<server>'
+  - ''
+  - '&aActive&7: <isActive>'
+  - '&aExpire&7: &f<expire>'
+  - '&7&m-----------------------------------'
+grant-item-lore-if-not-expired:
+  - '&eClick to remove this grant!'
+  - '&7&m-----------------------------------'
+grant-item-lore-if-removed:
+  - '&aRemoved by&7: &f<removedBy>'
+  - '&aDate when removed&7: &f<removedAt>'
+  - '&7&m-----------------------------------'
+grant-rank-lore:
+  - '&8&m-----------------------------------------'
+  - '&7Click to grant &a<rank> &7to &a<player>&7!'
+  - '&8&m-----------------------------------------'
+player-info-format:
+  - '&7&m---------------------------------'
+  - '&b&l<player>''s information'
+  - ''
+  - '&bCurrent rank&7: &f<rank>'
+  - '&bLast IP&7: &3<lastIP>'
+  - '&bServer&7: &3<server>.'
+  - '&bFirst joined&7: &3<firstJoined>'
+  - '&bLast seen&7: &f<lastSeenAgo>'
+  - '&bPermissions&7: &3<permissions>'
+  - '&7&m---------------------------------'
+player-info-gui-format:
+  - '&7&m----------------------------'
+  - '&bName&7: &f<name>'
+  - '&bUUID&7: &f<uuid>'
+  - '&bLast seen&7: &f<lastSeenAgo>'
+  - '&bCurrent rank&7: &f<rank>'
+  - '&7&m----------------------------'
+report-info-gui-format:
+  - '&7&m----------------------------'
+  - '&bReported by&7: &f<reportedBy>'
+  - '&bReason&7: &f<reason>'
+  - '&bServers&7:'
+  - '&7- &3<reporter_server> &7(&b<reportedBy>''s server&7)'
+  - '&7- &3<target_server> &7(&b<target>''s server&7)'
+  - '&7&m----------------------------'
+report-info-gui-format-solved:
+  - '&bSolved by&7: &f<solvedBy>'
+  - '&7&m----------------------------'
+report-info-gui-format-unsolved:
+  - '&eClick to solve this report!'
+  - '&7&m----------------------------'
+tag-item-lore-have-access:
+  - '&7&m-------------------------------'
+  - '&bFormat&7: &3<tagFormat>'
+  - '&bYour chat format will be like this:'
+  - '&7- &a<chatFormat>'
+  - ''
+  - '&aThanks for purchasing this tag&a&l!'
+  - '&7&m-------------------------------'
+tag-item-lore-have-not-access:
+  - '&7&m-------------------------------'
+  - '&bFormat&7: &3<tagFormat>'
+  - '&bYour chat format will be like this:'
+  - '&7- &a<chatFormat>'
+  - ''
+  - '&3Purchase this tag at our store'
+  - '&b<store>&3&l!'
+  - '&7&m-------------------------------'
+ignore-list-format:
+  - '&7&m-----------------------------------'
+  - '&dYou''re currently ignoring&7:'
+  - '{names}'
+  - '&7&m-----------------------------------'
+server-manager-server-info:
+  - '&7&m---------------------------------------------'
+  - '&3&l<name> info'
+  - ''
+  - '&bName&7: &3<name>'
+  - '&bTPS&7: <tps>'
+  - '&bMax players&7: &3<max>'
+  - '&bWhitelisted&7: &3<whitelist>'
+  - '&bUnder maintenance&7: &3<maintenance>'
+  - '&7&m---------------------------------------------'
+tags-format: '&7[<color><uniqueColor><tag>&7] '
+media:
+  website: 'https://Aquacore.net'
+  store: 'https://store.Aquacore.net'
+  discord: 'https://discord.gg/Aquacore'
+  teamspeak: 'ts.Aquacore.net'
+  twitter: 'https://twitter.com/Aquacore'
+join-message:
+  enabled: true
+  message:
+    - '&8&m-----------------------------------'
+    - '          &eWelcome to &b<server>&7, &3<name>'
+    - ''
+    - '&e&lWebsite&7: &b<website>'
+    - '&e&lStore&7: &b<store>'
+    - '&e&lDiscord&7: &b<discord>'
+    - '&e&lTeamspeak&7: &b<teamspeak>'
+    - ''
+    - '&eYour current rank is &f<rank>&e!'
+    - '&8&m-----------------------------------'
+on-join:
+  clear-chat: true
+  show-default-message: false
+  teleport:
+    enabled: false
+    location:
+      x: 0
+      y: 90
+      z: 0
+      yaw: 0
+      pitch: 0
+  play-sound:
+    enabled: true
+    sound: 'LEVEL_UP'
+on-quit:
+  show-default-message: false
+worlds:
+  do-mob-spawn: false
+  do-animal-spawn: false
+  do-leaves-decay: true
+  do-weather-change: false
+  do-food-level-change: false
+  not-affected-worlds:
+    - 'world_example'
+#Please use valid time like '1m, 1s, 1y, 1d', if it is not valid it will be 1 minute
+helpop-cooldown: '1m'
+report-cooldown: '1m'
+list-command:
+  format:
+    - '&7&m------------------------------------------'
+    - '{ranks}'
+    - ''
+    - ''
+    - '{players}'
+    - ''
+    - ''
+    - '&eType &b/list all &eto see global players.'
+    - '&7&m------------------------------------------'
+  players-format:
+    hover-enabled: true
+    hover-text:
+      - '&bRank&7: &f<rank>'
+tips:
+  enabled: true
+  send-every: 60
+  messages:
+    - '{0}&7[&3TIP&7] &bThis is tip number &31&b.{0}&7 '
+    - '{0}&7[&3TIP&7] &bThis is tip number &32&b.{0}&7 '
+    - '{0}&7[&3TIP&7] &bThis is tip number &33&b.{0}&7 '
+    - '{0}&7[&3TIP&7] &bThis is tip number &34&b.{0}&7 '
+    - '{0}&7[&3TIP&7] &bThis is tip number &35&b.{0}&7 '
+frozen-prefix: '&4[Frozen] '
+freeze-allowed-commands:
+  - '/msg'
+  - '/message'
+  - '/reply'
+  - '/r'
+  - '/freeze'
+  - '/ss'
+freeze-message:
+  - '&8&m-------------------------------------'
+  - '   &7(&4&lWARNING!)     &7(&4&lWARNING!)'
+  - ''
+  - '&b&lYou''re currently frozen!'
+  - '&bJoin our teamspeak&7: &3<teamspeak>'
+  - ''
+  - '   &7(&4&lWARNING!)     &7(&4&lWARNING!)'
+  - '&8&m-------------------------------------'
+left-frozen-click:
+  enabled: true
+  text: '&c[Click to ban]'
+  text-hover: '&eClick to ban <name> for Left while frozen'
+  command: '/ban <name> 30d Left while frozen'
+quick-access-prefixes:
+  admin-chat: '@'
+  staff-chat: '!'
+global-chat-disabled-prefix: '&7[&cOnly You&7] '
+#Please use valid time like '1m, 1s, 1y, 1d', if it is not valid it will be 10 minutes and 15 minutes
+panic:
+  duration: '10m'
+  command-cooldown: '15m'
+  remove-panic-on-quit: false
+  global-panic: false
+panic-message:
+  - '&8&m-------------------------------------'
+  - '   &7(&4&lWARNING!)     &7(&4&lWARNING!)'
+  - ''
+  - '&b&lYou''re currently in panic!'
+  - '&bWait for the staff or join our teamspeak!'
+  - '&bTeamspeak&7: &3<teamspeak>'
+  - ''
+  - '   &7(&4&lWARNING!)     &7(&4&lWARNING!)'
+  - '&8&m-------------------------------------'
+filter:
+  enabled: true
+  whitelisted-links:
+    - 'Aqua.club'
+  filtered-worlds:
+    - 'nigger'
+    - 'retard'
+    - 'loser'
+    - 'L'
+    - 'easy'
+    - 'ez'
+    - 'faggot'
+    - 'bitch'
+    - 'slut'
+use-nametags: true
+blacklisted-permissions:
+  - 'bukkit.command.plugins'
+disabled-commands:
+  - 'exampleCommand'
+tps-command-format:
+  - '&7&m------------------------------------'
+  - '&bServer Info&7:'
+  - '&7* &3Uptime&7: &b<uptime>'
+  - '&7* &3TPS&7: <tps1> <tps2> <tps3>'
+  - '&bMemory Info&7:'
+  - '&7* &3Maximum Memory&7: &b<maxMemory> &3MB'
+  - '&7* &3Allocated Memory&7: &b<allocatedMemory> &3MB'
+  - '&7* &3Free Memory&7: &b<freeMemory> &3MB'
+  - '&bWorlds Info&7:'
+  - '{worlds}'
+  - '&7&m------------------------------------'
+tps-command-world-format:
+  - '&7* &3<world> &a(&bLoaded Chunks&7: &3<loadedChunks>&7, &bEntities&7: &3<entities>&7, &bLiving Entities&7: &3<livingEntities>&a)'
+name-mc:
+  enabled: true
+  #Use your server name on NameMC or server IP
+  #Example URL: namemc.com/server/dev123Aqua.club
+  #For name it would be: dev123Aqua.club
+  server-name: 'Aqua.club'
+  on-join:
+    send-message: true
+    message:
+      - ' '
+      - '&eIt seems that you didn'' like us on Name MC, go to'
+      - '&bhttps://namemc.com/server/Aqua.club &eand like us'
+      - '&eto receive in-game rewards'
+      - ''
+    give-rank:
+      enabled: true
+      #Rank won't be given if doesn't exists!
+      rank-name: 'NameMC'
+    special-permissions-if-liked:
+      enabled: false
+      permissions:
+        - 'example-permission'
+coins:
+  enabled: true
+  starting-coins: 100
+#Vanish won't apply if player doesn't have permission for vanish command too
+vanish-on-join:
+  enabled: true
+  permission: 'Aqua.vanish.on.join'
+#StaffMode won't apply if player doesn't have permission for staffmode command too
+staff-mode-on-join:
+  enabled: true
+  permission: 'Aqua.staffmode.on.join'
+using-login-events: false
+#If this is enabled, at least 1 player online will be required for synchronization to work!
+using-bungee-cord: false
+format-name-color:
+  list: true
+  bellow-name: true
+notes-format:
+  - ''
+  - '&bListing notes of &3<player>&b...'
+  - ''
+  - '<notes>'
+  - ''
+note-format: '&3#<id> &7- &b<note>'
+staff-tags:
+  vanish: '&7[&bV&7] &7'
+  staff-mode: '&7[&bS&7] &7'
+staff-auth:
+  enabled: true
+  permission: 'Aqua.staff.auth'
+auth-message:
+    - ''
+    - '&bPlease authenticated yourself.'
+    - '&bUse &3/auth <password>&b!'
+    - ''
+auth-message-register:
+  - ''
+  - '&bPlease authenticated yourself.'
+  - '&bUse &3/auth register <password> <password>&b!'
+  - ''
+auth-allowed-commands:
+  - '/auth'
+global-list:
+  format:
+    - ""
+    - "&bShowing you global list:"
+    - "<servers>"
+    - "&bGlobal online: &3<players>"
+    - - ""
+  server-format: " &3* &b<server> &7(&3<online>/<max_online>&7)"
+#Please use a valid duration like '30d', '2d', '30m'
+purchasable-ranks-duration: "30d"

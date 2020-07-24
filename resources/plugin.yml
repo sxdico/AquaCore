@@ -1,0 +1,8 @@
+name: 'AquaCore'
+version: 2.2.1
+author: 'Activated_'
+main: 'me.activated.core.plugin.AquaCore'
+description: 'AquaCore made by FaceSlap_ aka Activated_'
+softdepend:
+  - PlaceholderAPI
+  - MVdWPlaceholderAPI

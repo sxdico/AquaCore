@@ -1,0 +1,132 @@
+online-staff-gui:
+  permission: 'Aqua.core.staff'
+  lore:
+    - '&7&m-----------------------------------'
+    - '&bVanished&7: <isVanished>'
+    - '&bIn Staff Mode&7: <isStaffMode>'
+    - '&bRank&7: <rank>'
+    - '&7&m-----------------------------------'
+    - '&3Click to teleport to &b<target>'
+    - '&7&m-----------------------------------'
+items:
+  #Command goes without "/"
+  compass:
+    name: '&bPush forward'
+    item: 'COMPASS'
+    durability: 0
+    slot: 1
+    action:
+      enabled: true
+      action: 'compass'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click to push'
+      - '&eyourself forward.'
+  staff-gui:
+    name: '&bStaff Online'
+    item: 'SKULL_ITEM'
+    durability: 3
+    slot: 2
+    action:
+      enabled: true
+      action: 'online-staff'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click to see'
+      - '&eonline staff.'
+  random-teleport:
+    name: '&bRandom Player'
+    item: 'INK_SACK'
+    durability: 12
+    slot: 3
+    action:
+      enabled: true
+      action: 'random-teleport'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click to teleport'
+      - '&eto random non-staff player.'
+  inspect:
+    name: '&bInspect Player'
+    item: 'CHEST'
+    durability: 0
+    slot: 7
+    action:
+      enabled: true
+      action: 'inspect-player'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click player to'
+      - '&einspect inventory and armor.'
+  freeze:
+    name: '&bFreeze Player'
+    item: 'IRON_FENCE'
+    durability: 0
+    slot: 9
+    action:
+      enabled: true
+      action: 'freeze-player'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click player to'
+      - '&efreeze them.'
+  better-view:
+    name: '&bBetter View'
+    item: 'CARPET'
+    durability: 1
+    slot: 5
+    action:
+      enabled: false
+      action: ''
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eHold this item for'
+      - '&ea better view.'
+  vanish-on:
+    name: '&bUn-Vanish'
+    item: 'INK_SACK'
+    durability: 8
+    slot: 8
+    action:
+      enabled: true
+      action: 'vanish-off'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click to show'
+      - '&eyourself to players.'
+  vanish-off:
+    name: '&bVanish'
+    item: 'INK_SACK'
+    durability: 10
+    slot: 8
+    action:
+      enabled: true
+      action: 'vanish-on'
+    command:
+      enabled: false
+      command: ''
+    lore:
+      - ''
+      - '&eRight click to hide'
+      - '&eyourself from players.'

@@ -1,0 +1,269 @@
+COLORS:
+  MAIN: 'AQUA'
+  MIDDLE: 'GRAY'
+  SECONDARY: 'BLUE'
+WARNS:
+  BAN_ON_REACHED_WARNS: true
+  MAX_ACTIVE_WARNS_TO_REACH: 3
+  REMOVE_ALL_ACTIVE_WARNS_ON_BAN: true
+  BAN:
+    REASON: 'Max warns reached'
+    #Please use valid duration like '1m,1d,1m,1s', if it is invalid, the time will be 3 days
+    DURATION: '3d'
+ALTS:
+  DISALLOW-ALTING: true
+  MAX-ALTS-ON-ALL-IPS: 3
+  KICK-MESSAGE: '&cYou have exceeded max alt accounts that can be used. You have &c&l<current> &calts and the maximum is &c&l<max>&c!'
+BROADCASTS:
+  PERM-BAN:
+    MESSAGE: '&3<user> &bhas been permanently banned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  PERM-BAN-SILENT:
+    MESSAGE: '&3<user> &bhas been permanently &esilent &bbanned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  TEMP-BAN:
+    MESSAGE: '&3<user> &bhas been temporarily banned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  TEMP-BAN-SILENT:
+    MESSAGE: '&3<user> &bhas been temporarily &esilent &bbanned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  PERM-IP-BAN:
+    MESSAGE: '&3<user> &bhas been permanently IP-banned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  PERM-IP-BAN-SILENT:
+    MESSAGE: '&3<user> &bhas been permanently &esilent &bIP-banned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  TEMP-IP-BAN:
+    MESSAGE: '&3<user> &bhas been temporarily IP-banned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  TEMP-IP-BAN-SILENT:
+    MESSAGE: '&3<user> &bhas been temporarily &esilent &bIP-banned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  UNBAN:
+    MESSAGE: '&3<user> &bhas been unbanned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+  UNBAN-SILENT:
+    MESSAGE: '&3<user> &bhas been &esilently &bunbanned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+  PERM-MUTE:
+    MESSAGE: '&3<user> &bhas been permanently muted by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  PERM-MUTE-SILENT:
+    MESSAGE: '&3<user> &bhas been permanently &esilent &bmuted by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  TEMP-MUTE:
+    MESSAGE: '&3<user> &bhas been temporarily muted by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  TEMP-MUTE-SILENT:
+    MESSAGE: '&3<user> &bhas been temporarily &esilent &bmuted by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  UNMUTE:
+    MESSAGE: '&3<user> &bhas been unmuted by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+  UNMUTE-SILENT:
+    MESSAGE: '&3<user> &bhas been &esilently &bunmuted by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+  PERM-WARN:
+    MESSAGE: '&3<user> &bhas been warned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  PERM-WARN-SILENT:
+    MESSAGE: '&3<user> &bhas been &esilently &bwarned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &bPermanent'
+  TEMP-WARN:
+    MESSAGE: '&3<user> &bhas been temporarily warned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  TEMP-WARN-SILENT:
+    MESSAGE: '&3<user> &bhas been temporarily &esilent &bwarned by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+        - '&3Duration&7: &b<duration>'
+  BLACKLIST:
+    MESSAGE: '&4&L<user> &chas been blacklisted by &4&l<sender>&c.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&4Reason&7: &c<reason>'
+  UN-BLACKLIST:
+    MESSAGE: '&4&L<user> &chas been un-blacklisted by &4&l<sender>&c.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&4Reason&7: &c<reason>'
+  BLACKLIST-SILENT:
+    MESSAGE: '&4&L<user> &chas been &esilently &cblacklisted by &4&l<sender>&c.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&4Reason&7: &c<reason>'
+  UN-BLACKLIST-SILENT:
+    MESSAGE: '&4&L<user> &chas been &esilently &cun-blacklisted by &4&l<sender>&c.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&4Reason&7: &c<reason>'
+  KICK:
+    MESSAGE: '&3<user> &bhas been kicked by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+  KICK-SILENT:
+    MESSAGE: '&3<user> &bhas been &esilent &bkicked by &3<sender>&b.'
+    HOVER:
+      ENABLED: true
+      MESSAGE:
+        - '&3Reason&7: &b<reason>'
+KICK-MESSAGES:
+  KICK:
+    - '&bYou have been kicked from &3<server> &bserver!'
+    - ''
+    - '&bReason&7: &3<reason>'
+    - '&bKicked by&7: &3<executedBy>'
+  BLACKLIST:
+    - '&cYour account is currently &4blacklisted &cfrom &4&lTest Network&c!'
+    - ''
+    - '&cReason&7: &4<reason>'
+    - '&cIP Relative&7: <IPRelative>'
+    - ''
+    - '&cYou can''t appeal for this punishment!'
+  BLACKLIST-OTHER:
+    - '&cYour account is currently &4blacklisted &cfrom &4&lTest Network&c!'
+    - '&cThis blacklist is associated with &4<bannedUser> &caccount!'
+    - ''
+    - '&cReason&7: &4<reason>'
+    - '&cIP Relative&7: <IPRelative>'
+    - ''
+    - '&cYou can''t appeal for this punishment!'
+  PERM-BAN:
+    - '&bYour account is currently &3permanently &bsuspendded from &3&lTest Network&b!'
+    - ''
+    - '&bReason&7: &3<reason>'
+    - '&bIP Relative&7: <IPRelative>'
+    - ''
+    - '&bTo appeal visit&7: &3www.Aqua.club'
+  TEMP-BAN:
+    - '&bYour account is currently &3temporarily &bsuspendded from &3&lTest Network&b!'
+    - ''
+    - '&bReason&7: &3<reason>'
+    - '&bDuration&7: &3<duration>'
+    - '&bTime until unban&7: &3<expire>'
+    - '&bIP Relative&7: <IPRelative>'
+    - ''
+    - '&bTo appeal visit&7: &3www.Aqua.club'
+  PERM-IP-BAN:
+    - '&bYour account is currently &bsuspendded from &3&lTest Network&b!'
+    - '&bThis ban is associated with &3<bannedUser> &baccount!'
+    - ''
+    - '&bReason&7: &3<reason>'
+    - ''
+    - '&bTo appeal visit&7: &3www.Aqua.club'
+  TEMP-IP-BAN:
+    - '&bYour account is currently &bsuspendded from &3&lTest Network&b!'
+    - '&bThis ban is associated with &3<bannedUser> &baccount!'
+    - ''
+    - '&bReason&7: &3<reason>'
+    - '&bDuration&7: &3<duration>'
+    - '&bTime until unban&7: &3<expire>'
+    - ''
+    - '&bTo appeal visit&7: &3www.Aqua.club'
+PUNISH-INFO-COMMAND-FORMAT:
+  - '&7&m---&8*&7&m-------------------------------------&8*&7&m---'
+  - '&3&l<name>''s &bpunishments info'
+  - ''
+  - '&bBans&7: &3<bans>'
+  - '&bMutes&7: &3<mutes>'
+  - '&bBlacklists&7: &3<blacklists>'
+  - '&bKicks&7: &3<kicks>'
+  - '&bWarns&7: &3<warns>'
+  - ''
+  - '&3Please type &b''/punishinfo warns''&7, &3to see info on warns!'
+  - '&3Please type &b''/punishinfo mutes''&7, &3to see info on mutes!'
+  - '&7&m---&8*&7&m-------------------------------------&8*&7&m---'
+PUNISH-INFO-COMMAND-WARNS-FORMAT:
+  - '&7&m---&8*&7&m-------------------------------------&8*&7&m---'
+  - '&3&l<name>''s &bactive warns info'
+  - ''
+  - '{warns}'
+  - ''
+  - '&7&m---&8*&7&m-------------------------------------&8*&7&m---'
+PUNISH-INFO-COMMAND-MUTES-FORMAT:
+  - '&7&m---&8*&7&m-------------------------------------&8*&7&m---'
+  - '&3&l<name>''s &bactive mutes info'
+  - ''
+  - '{mutes}'
+  - ''
+  - '&7&m---&8*&7&m-------------------------------------&8*&7&m---'

@@ -1,0 +1,131 @@
+Default:
+  name: 'Default'
+  prefix: '&a'
+  suffix: ''
+  default-rank: true
+  rank-color: 'GREEN'
+  weight: 50
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+YouTuber:
+  name: 'YouTuber'
+  prefix: '&7[&5YouTuber&7] '
+  suffix: ''
+  rank-color: 'DARK_PURPLE'
+  weight: 100
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Famous:
+  name: 'Famous'
+  prefix: '&7[&dFamous&7] '
+  suffix: ''
+  rank-color: 'LIGHT_PURPLE'
+  weight: 100
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Donator:
+  name: 'Donator'
+  prefix: '&7[&2Donator&7] '
+  suffix: ''
+  rank-color: 'DARK_GREEN'
+  weight: 150
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Donator+:
+  name: 'Donator+'
+  prefix: '&7[&2Donator+&7] '
+  suffix: ''
+  rank-color: 'DARK_GREEN'
+  weight: 200
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Premium:
+  name: 'Premium'
+  prefix: '&7[&bPremium&7] '
+  suffix: ''
+  rank-color: 'AQUA'
+  weight: 250
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Mod:
+  name: 'Mod'
+  prefix: '&7[&3Mod&7] &3&o'
+  suffix: ''
+  rank-color: 'DARK_AQUA'
+  weight: 300
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+SeniorMod:
+  name: 'SeniorMod'
+  prefix: '&7[&3Senior-Mod&7] &3&o'
+  suffix: ''
+  rank-color: 'DARK_AQUA'
+  weight: 350
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Admin:
+  name: 'Admin'
+  prefix: '&7[&cAdmin&7] &c&o'
+  suffix: ''
+  rank-color: 'RED'
+  weight: 400
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+PlatformAdmin:
+  name: 'PlatformAdmin'
+  prefix: '&7[&4Platform-Admin&7] &4&o'
+  suffix: ''
+  rank-color: 'DARK_RED'
+  weight: 450
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Developer:
+  name: 'Developer'
+  prefix: '&7[&9Developer&7] &9&o'
+  suffix: ''
+  rank-color: 'BLUE'
+  weight: 500
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Manager:
+  name: 'Manager'
+  prefix: '&7[&4Manager&7] &4&o'
+  suffix: ''
+  rank-color: 'DARK_RED'
+  weight: 500
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
+Owner:
+  name: 'Owner'
+  prefix: '&7[&4Owner&7] &4&o'
+  suffix: ''
+  rank-color: 'DARK_RED'
+  weight: 550
+  inheritance:
+    - 'Default'
+  permissions:
+    - 'Aqua.command.list'
